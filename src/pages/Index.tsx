@@ -35,7 +35,7 @@ const Index = () => {
   ];
 
   const handleCallNow = () => {
-    window.open("tel:+13051237666684", "_self");
+    window.open("tel:+16504651676", "_self");
   };
 
   const handleExploreMenu = () => {
@@ -56,7 +56,7 @@ const Index = () => {
               <span className="text-white font-bold text-lg">S</span>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-coral-600 to-ocean-600 bg-clip-text text-transparent">
-              SmoothieMiami
+              SmoothieMoves
             </span>
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -242,7 +242,7 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-800">Phone</h3>
               <p className="text-gray-600">
-                (305) 123-SMOOTH<br />
+                (305) 123-4567<br />
                 Call for orders & catering
               </p>
             </Card>
@@ -268,13 +268,13 @@ const Index = () => {
             <div className="w-8 h-8 bg-gradient-to-br from-coral-400 to-sunset-400 rounded-full flex items-center justify-center">
               <span className="text-white font-bold">S</span>
             </div>
-            <span className="text-xl font-bold">SmoothieMiami</span>
+            <span className="text-xl font-bold">SmoothieMoves</span>
           </div>
           <p className="text-gray-400 mb-4">
             Bringing tropical paradise to every sip since 2020
           </p>
           <p className="text-gray-500">
-            © 2024 SmoothieMiami. All rights reserved. Made with 💛 in Miami
+            © 2024 SmoothieMoves. All rights reserved. Made with 💛 in Miami
           </p>
         </div>
       </footer>
