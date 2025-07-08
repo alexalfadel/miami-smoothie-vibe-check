@@ -38,6 +38,14 @@ const Index = () => {
     window.open("tel:+13051237666684", "_self");
   };
 
+  const handleExploreMenu = () => {
+    document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleFindLocation = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-coral-50 via-white to-ocean-50">
       {/* Header */}
@@ -83,12 +91,14 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
+                onClick={handleExploreMenu}
                 size="lg" 
                 className="bg-gradient-to-r from-coral-500 to-sunset-500 hover:from-coral-600 hover:to-sunset-600 text-white text-lg px-8 py-3"
               >
                 Explore Menu
               </Button>
               <Button 
+                onClick={handleFindLocation}
                 size="lg" 
                 variant="outline" 
                 className="border-ocean-400 text-ocean-600 hover:bg-ocean-50 text-lg px-8 py-3"
