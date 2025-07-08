@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Clock, Star, Leaf, Heart, Zap } from "lucide-react";
@@ -13,7 +12,7 @@ const Index = () => {
       color: "from-sunset-400 to-coral-400"
     },
     {
-      name: "Ocean Breeze",
+      name: "Ocean Breeze", 
       description: "Blueberry, banana, coconut water, and mint",
       price: "$7.99",
       image: "🫐",
@@ -22,7 +21,7 @@ const Index = () => {
     {
       name: "Miami Sunrise",
       description: "Strawberry, peach, orange juice, and ginger",
-      price: "$8.49",
+      price: "$8.49", 
       image: "🍓",
       color: "from-coral-400 to-sunset-400"
     },
@@ -34,6 +33,10 @@ const Index = () => {
       color: "from-green-400 to-ocean-400"
     }
   ];
+
+  const handleCallNow = () => {
+    window.open("tel:+13051237666684", "_self");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-coral-50 via-white to-ocean-50">
@@ -54,8 +57,12 @@ const Index = () => {
             <a href="#about" className="text-gray-700 hover:text-coral-500 transition-colors">About</a>
             <a href="#contact" className="text-gray-700 hover:text-coral-500 transition-colors">Contact</a>
           </nav>
-          <Button className="bg-gradient-to-r from-coral-500 to-sunset-500 hover:from-coral-600 hover:to-sunset-600 text-white">
-            Order Now
+          <Button 
+            onClick={handleCallNow}
+            className="bg-gradient-to-r from-coral-500 to-sunset-500 hover:from-coral-600 hover:to-sunset-600 text-white"
+          >
+            <Phone className="w-4 h-4 mr-2" />
+            Call Now
           </Button>
         </div>
       </header>
@@ -121,14 +128,8 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{smoothie.name}</h3>
                   <p className="text-gray-600 mb-4">{smoothie.description}</p>
-                  <div className="flex justify-between items-center">
+                  <div className="text-center">
                     <span className="text-2xl font-bold text-coral-600">{smoothie.price}</span>
-                    <Button 
-                      size="sm" 
-                      className="bg-gradient-to-r from-ocean-400 to-ocean-500 hover:from-ocean-500 hover:to-ocean-600 text-white"
-                    >
-                      Add to Cart
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
